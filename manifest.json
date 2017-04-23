@@ -1,0 +1,35 @@
+{
+	"background":{
+		"page":"background.html"
+	},
+	"manifest_version": 2,
+	"name":"myplugin",
+	"permissions": [
+		"contextMenus",
+		"cookies",
+		"downloads",
+		"tabs",
+		"webNavigation",
+		"webRequest",
+		"downloads",
+		"http://*/*",
+		"https://*/*",
+		"nativeMessaging"
+	],
+	"version":"1.0",
+	"icons":{
+		"48":"witcher.png"
+	},
+	"content_scripts": [
+		{
+			"js":["1.js"],
+			"matches":["http://*/*", "https://*/*"]
+		}
+	],
+	"description":"???",
+	"browser_action":{
+		"default_title":"myplugin",
+		"default_popup":"popup.html",
+		"default_icon":"witcher.png"
+	}
+}
