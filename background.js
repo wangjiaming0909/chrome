@@ -7,6 +7,7 @@ function downloadlistener_callback(item){
 function clicked(){
 	s=new ActiveXObject("WScript.Shell");
 	cmd = "ls";
+	//？？
 	s.Run(cmd);
 };
 //chrome.downloads.onCreated.addListener(downloadlistener_callback);
